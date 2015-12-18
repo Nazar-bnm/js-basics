@@ -1,0 +1,59 @@
+
+1)
+
+var name = "Andrew";
+var time = " tomorrow at 20:00";
+var place = " in the city center";
+var event = prompt("Please, enter event", "date");
+
+console.log(name + " going to a " + event + time + place);
+
+---------------------------------------------------------------------------------------------------
+
+2)
+
+var x1 = -3, y1 = -2;
+var x2 = prompt("Please, enter coordinate x", 0);
+var y2 = prompt("Please, enter coordinate y", 0);
+var distance = Math.sqrt( (Math.pow((x1-x2), 2)) + (Math.pow((y1-y2), 2)) )
+
+alert("The distance between points A(" + x1 + "," + y1 + ") and B(" + x2 + "," + y2 + ") is " + distance)
+
+---------------------------------------------------------------------------------------------------
+
+3)
+var triangle = "";
+
+for (i = 0; i < 8; i++) {
+  triangle += "#";
+  console.log(triangle);
+}
+
+
+---------------------------------------------------------------------------------------------------
+
+4)
+var i = 0;
+
+while(i < 4) {
+  i++
+  console.log("#### ");
+  console.log(" ####");
+}
+
+---------------------------------------------------------------------------------------------------
+
+5)
+var number = Math.round(Math.random()*100);
+var userNumber = prompt("Enter a number from 0 to 100", 50);
+
+while(number != userNumber) {
+if(number < userNumber) {
+  alert("Our number is lower, try again");
+  var userNumber = prompt("Enter a number from 0 to 100", 50);
+}else if(number > userNumber) {
+  alert("Our number is higher, try again");
+  var userNumber = prompt("Enter a number again", 50);
+}
+};
+alert("You are right, the number is " + number);
